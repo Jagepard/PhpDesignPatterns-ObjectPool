@@ -1,0 +1,14 @@
+#! usr/bin/env php
+<?php
+
+namespace Creational\ObjectPool;
+
+require_once 'vendor/autoload.php';
+
+$objectPool = new ObjectPool();
+
+$objectPool->setPool(new City('London'));
+$objectPool->setPool(new City('Berlin'));
+
+printf("Your city is %s \n", $objectPool->getPool('London')->getCityName());
+printf("Your city is %s \n", $objectPool->getPool('Berlin')->getCityName());
