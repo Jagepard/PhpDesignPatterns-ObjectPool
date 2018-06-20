@@ -1,16 +1,18 @@
 <?php
+
+declare(strict_types=1);
+
 /**
- * Date: 26.03.18
- * Time: 15:30
- *
  * @author    : Korotkov Danila <dankorot@gmail.com>
- * @copyright Copyright (c) 2018, Korotkov Danila
- * @license   http://www.gnu.org/licenses/gpl.html GNU GPLv3.0
+ * @license   https://mit-license.org/ MIT
  */
 
 namespace Creational\ObjectPool;
 
-
+/**
+ * Class ObjectPool
+ * @package Creational\ObjectPool
+ */
 class ObjectPool
 {
 
@@ -20,33 +22,20 @@ class ObjectPool
     protected $pool = [];
 
     /**
-     * @param string $objectName
-     * @return mixed|null
+     * @param string $name
+     * @return CityInterface
      */
-    public function getPool(string $objectName): ?City
+    public function getObject(string $name): CityInterface
     {
-        return $this->pool[$objectName] ?? null;
+        return $this->pool[$name];
     }
 
     /**
-     * @param City $object
-     * @return null|void
+     * @param CityInterface $object
+     * @return void
      */
-    public function setPool(City $object)
+    public function setObject(CityInterface $object) : void
     {
-        $this->pool[$object->getCityName()] = $object ?? null;
-    }
-
-    /**
-     * @param string $objectName
-     * @return null|void
-     */
-    public function unsetPool(string $objectName)
-    {
-        if (isset($this->pool[$objectName])) {
-            unset($this->pool[$objectName]);
-        } else {
-            return null;
-        }
+        $this->pool[$object->getName()] = $object;
     }
 }

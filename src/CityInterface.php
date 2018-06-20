@@ -10,31 +10,20 @@ declare(strict_types=1);
 namespace Creational\ObjectPool;
 
 /**
- * Class City
+ * Interface InterfaceCity
  * @package Creational\ObjectPool
  */
-class City implements CityInterface
+interface CityInterface
 {
-
-    /**
-     * @var string
-     */
-    protected $name;
 
     /**
      * City constructor.
      * @param string $name
      */
-    public function __construct(string $name)
-    {
-        $this->name = $name;
-    }
+    public function __construct(string $name);
 
     /**
      * @return string
      */
-    public function getName(): string
-    {
-        return $this->name;
-    }
+    public function getName(): string;
 }
