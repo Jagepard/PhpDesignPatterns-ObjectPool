@@ -5,10 +5,10 @@ namespace Creational\ObjectPool;
 
 require_once 'vendor/autoload.php';
 
-$objectPool = new ObjectPool();
+$pool = new ObjectPool();
 
-$objectPool->setPool(new City('London'));
-$objectPool->setPool(new City('Berlin'));
+$pool->setObject(new City('London'));
+$pool->setObject(new City('Berlin'));
 
-printf("Your city is %s \n", $objectPool->getPool('London')->getCityName());
-printf("Your city is %s \n", $objectPool->getPool('Berlin')->getCityName());
+printf("Your city is %s \n", $pool->getObject('London')->getName());
+printf("Your city is %s \n", $pool->getObject('Berlin')->getName());

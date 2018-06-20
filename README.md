@@ -1,9 +1,9 @@
 [![Build Status](https://travis-ci.org/Jagepard/PhpDesignPatterns-ObjectPool.svg?branch=master)](https://travis-ci.org/Jagepard/PhpDesignPatterns-ObjectPool)
+[![codecov](https://codecov.io/gh/Jagepard/PhpDesignPatterns-ObjectPool/branch/master/graph/badge.svg)](https://codecov.io/gh/Jagepard/PhpDesignPatterns-ObjectPool)
 [![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/Jagepard/PhpDesignPatterns-ObjectPool/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/Jagepard/PhpDesignPatterns-ObjectPool/?branch=master)
-[![Maintainability](https://api.codeclimate.com/v1/badges/7a6e4faef5f3bedee182/maintainability)](https://codeclimate.com/github/Jagepard/PhpDesignPatterns-ObjectPool/maintainability)
-
-![ObjectPool](https://github.com/Jagepard/PhpDesignPatterns-ObjectPool/blob/master/ObjectPool.png?raw=true "ObjectPool")
-
+[![Code Climate](https://codeclimate.com/github/Jagepard/PhpDesignPatterns-ObjectPool/badges/gpa.svg)](https://codeclimate.com/github/Jagepard/PhpDesignPatterns-ObjectPool)
+[![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
+-----
 
 # ObjectPool
 Объектный пул
