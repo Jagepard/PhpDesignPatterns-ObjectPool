@@ -7,3 +7,5 @@
 
 # ObjectPool | [API](https://github.com/Jagepard/PhpDesignPatterns-ObjectPool/blob/master/docs.md "Documentation API")
 Объектный пул
+
+![ObjectPool](https://github.com/Jagepard/PhpDesignPatterns-ObjectPool/blob/master/UML.png)
