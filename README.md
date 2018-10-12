@@ -5,5 +5,5 @@
 [![License: MIT](https://img.shields.io/badge/license-MIT-498e7f.svg)](https://mit-license.org/)
 -----
 
-# ObjectPool
+# ObjectPool | [API](https://github.com/Jagepard/PhpDesignPatterns-ObjectPool/blob/master/docs.md "Documentation API")
 Объектный пул
