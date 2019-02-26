@@ -15,11 +15,10 @@ namespace Creational\ObjectPool;
  */
 class City implements CityInterface
 {
-
     /**
      * @var string
      */
-    protected $name;
+    private $name;
 
     /**
      * City constructor.
