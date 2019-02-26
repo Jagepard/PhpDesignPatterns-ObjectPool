@@ -13,13 +13,12 @@ namespace Creational\ObjectPool;
  * Class ObjectPool
  * @package Creational\ObjectPool
  */
-class ObjectPool
+final class ObjectPool
 {
-
     /**
      * @var array
      */
-    protected $pool = [];
+    private $pool = [];
 
     /**
      * @param string $name
@@ -27,7 +26,11 @@ class ObjectPool
      */
     public function getObject(string $name): CityInterface
     {
-        return $this->pool[$name];
+        if (array_key_exists($name, $this->pool)) {
+            return $this->pool[$name];
+        }
+
+        throw new \InvalidArgumentException();
     }
 
     /**
