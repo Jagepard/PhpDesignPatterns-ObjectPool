@@ -16,7 +16,6 @@ use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class ObjectPoolTest extends PHPUnit_Framework_TestCase
 {
-
     /**
      * @var ObjectPool
      */
