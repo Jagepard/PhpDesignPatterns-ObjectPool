@@ -9,10 +9,6 @@ declare(strict_types=1);
 
 namespace Creational\ObjectPool;
 
-/**
- * Class ObjectPool
- * @package Creational\ObjectPool
- */
 final class ObjectPool
 {
     /**
@@ -30,7 +26,7 @@ final class ObjectPool
             return $this->pool[$name];
         }
 
-        throw new \InvalidArgumentException();
+        throw new \InvalidArgumentException("Object $name does'nt exist");
     }
 
     /**
@@ -39,6 +35,10 @@ final class ObjectPool
      */
     public function setObject(CityInterface $object) : void
     {
+        if (array_key_exists($object->getName(), $this->pool)) {
+            throw new \InvalidArgumentException("Object {$object->getName()} is already exist");
+        }
+
         $this->pool[$object->getName()] = $object;
     }
 }
