@@ -7,10 +7,6 @@
 
 namespace Creational\ObjectPool;
 
-/**
- * Interface InterfaceCity
- * @package Creational\ObjectPool
- */
 interface CityInterface
 {
     /**
