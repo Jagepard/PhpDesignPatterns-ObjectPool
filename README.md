@@ -6,6 +6,8 @@
 -----
 
 # ObjectPool | [API](https://github.com/Jagepard/PhpDesignPatterns-ObjectPool/blob/master/docs.md "Documentation API")
+```php run``` Запустить исполнение шаблона в терминале
+
 Объектный пул
 
 ![ObjectPool](https://github.com/Jagepard/PhpDesignPatterns-ObjectPool/blob/master/UML.png)
