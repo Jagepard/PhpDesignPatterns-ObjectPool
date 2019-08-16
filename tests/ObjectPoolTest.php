@@ -14,9 +14,6 @@ use Creational\ObjectPool\ObjectPool;
 use Creational\ObjectPool\CityInterface;
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
-/**
- * Class FactoryMethodTest
- */
 class ObjectPoolTest extends PHPUnit_Framework_TestCase
 {
 
