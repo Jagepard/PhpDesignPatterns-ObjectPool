@@ -3,8 +3,8 @@
 declare(strict_types=1);
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
 
 namespace Creational\ObjectPool;
@@ -18,9 +18,9 @@ final class ObjectPool
 
     /**
      * @param string $name
-     * @return CityInterface
+     * @return ObjectInterface
      */
-    public function getObject(string $name): CityInterface
+    public function getObject(string $name): ObjectInterface
     {
         if (array_key_exists($name, $this->pool)) {
             return $this->pool[$name];
@@ -30,10 +30,10 @@ final class ObjectPool
     }
 
     /**
-     * @param CityInterface $object
+     * @param ObjectInterface $object
      * @return void
      */
-    public function setObject(CityInterface $object) : void
+    public function setObject(ObjectInterface $object) : void
     {
         if (array_key_exists($object->getName(), $this->pool)) {
             throw new \InvalidArgumentException("Object {$object->getName()} is already exist");
