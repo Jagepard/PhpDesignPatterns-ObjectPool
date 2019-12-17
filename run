@@ -8,11 +8,11 @@ require_once 'vendor/autoload.php';
 $pool = new ObjectPool();
 
 try{
-    $pool->setObject(new City('London'));
-    $pool->setObject(new City('Berlin'));
+    $pool->setObject(new SomeObject('First'));
+    $pool->setObject(new SomeObject('Second'));
 
-    printf("Your city is %s \n", $pool->getObject('London')->getName());
-    printf("Your city is %s \n", $pool->getObject('Berlin')->getName());
+    printf("Your object is %s \n", $pool->getObject('First')->getName());
+    printf("Your object is %s \n", $pool->getObject('Second')->getName());
 } catch (\Exception $e) {
     echo 'Caught exception: ',  $e->getMessage(), "\n";
 }

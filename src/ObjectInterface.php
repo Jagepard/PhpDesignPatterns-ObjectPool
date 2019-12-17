@@ -1,13 +1,12 @@
 <?php
 
 /**
- * @author    : Korotkov Danila <dankorot@gmail.com>
- * @license   https://mit-license.org/ MIT
+ * @author  : Jagepard <jagepard@yandex.ru>
+ * @license https://mit-license.org/ MIT
  */
-
 namespace Creational\ObjectPool;
 
-interface CityInterface
+interface ObjectInterface
 {
     /**
      * City constructor.
