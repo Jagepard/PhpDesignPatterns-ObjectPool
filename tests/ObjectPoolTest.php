@@ -7,31 +7,26 @@
 
 namespace Creational\ObjectPool\Tests;
 
-use Creational\ObjectPool\SomeObject;
-use Creational\ObjectPool\ObjectPool;
-use Creational\ObjectPool\ObjectInterface;
+use Creational\ObjectPool\{SomeObject, ObjectPool, ObjectInterface};
 use PHPUnit\Framework\TestCase as PHPUnit_Framework_TestCase;
 
 class ObjectPoolTest extends PHPUnit_Framework_TestCase
 {
-    /**
-     * @var ObjectPool
-     */
-    protected $pool;
+    protected ObjectPool $pool;
 
     protected function setUp(): void
     {
         $this->pool = new ObjectPool();
-        $this->pool->setObject(new SomeObject('First'));
+        $this->pool->setObject(new SomeObject("First"));
     }
 
     public function testCityInstance()
     {
-        $this->assertInstanceOf(ObjectInterface::class, $this->pool->getObject('First'));
+        $this->assertInstanceOf(ObjectInterface::class, $this->pool->getObject("First"));
     }
 
     public function testPool()
     {
-        $this->assertEquals($this->pool->getObject('First')->getName(), 'First');
+        $this->assertEquals("First", $this->pool->getObject("First")->getName());
     }
 }
