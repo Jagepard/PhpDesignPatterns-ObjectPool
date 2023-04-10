@@ -8,5 +8,8 @@ namespace Creational\ObjectPool;
 
 interface ObjectInterface
 {
+    /**
+     * @return string
+     */
     public function getName(): string;
 }
